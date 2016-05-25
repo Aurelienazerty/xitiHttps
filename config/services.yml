@@ -1,0 +1,8 @@
+services:
+    Aurelienazerty.xitiHttps.listener:
+        class: Aurelienazerty\xitiHttps\event\listener
+        arguments:
+            - @config
+            - @user
+        tags:
+            - { name: event.listener }
